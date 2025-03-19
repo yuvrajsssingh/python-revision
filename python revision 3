@@ -1,0 +1,9 @@
+def capatlize_ascii(s):
+    sring=""
+    for i in s:
+        if ord(i) % 2 == 0:
+            string+=i.upper()
+        else:
+            string+=i.lower()
+    return string        
+capatlize_ascii("to be or not to be!")   
