@@ -20,3 +20,13 @@ def highest_score(a):
             return i[0]
 a=[("yuvraj",1),("abhay",2),("gourav",0),("sakshi",100)] 
 highest_score(a)
+
+(3).finding and printing pairs of elements whose sum is 0 from the list
+a=[1,2,3,4,-1,-2,0]
+def two_sum(a):
+    for i in range(len(a)):
+        for j in range(i+1,len(a)):
+            if a[i]+a[j]==0:
+                return True
+    return False
+two_sum(a) 
