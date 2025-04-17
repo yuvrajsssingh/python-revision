@@ -1,4 +1,4 @@
-Create a function that takes a string as input and capitalizes a letter if its ASCII codeis even and returns its lower case version if its ASCII code is odd.
+(1).Create a function that takes a string as input and capitalizes a letter if its ASCII codeis even and returns its lower case version if its ASCII code is odd.
 def capatlize_ascii(s):
     sring=""
     for i in s:
@@ -8,3 +8,15 @@ def capatlize_ascii(s):
             string+=i.lower()
     return string        
 capatlize_ascii("to be or not to be!")   
+
+
+(2).You are given a list of tuples where each tuple contains a student's name and their marks.
+Write a program to find and print the name(s) of the student(s) who scored the highest marks.
+
+def highest_score(a):
+    marks=max(marks for name , marks in a)
+    for i in a:
+        if i[1]==marks:
+            return i[0]
+a=[("yuvraj",1),("abhay",2),("gourav",0),("sakshi",100)] 
+highest_score(a)
