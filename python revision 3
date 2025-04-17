@@ -30,3 +30,16 @@ def two_sum(a):
                 return True
     return False
 two_sum(a) 
+
+(4).find the missing value.
+a=[0,1,2,4]
+def missing_value(a):
+    d={}
+    for i in a:
+        d[i]=True
+    for i in range(len(a)+1):
+        if not d.get(i):
+            return i 
+    return none
+    
+missing_value(a) 
